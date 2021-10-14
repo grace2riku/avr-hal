@@ -24,7 +24,8 @@ pub(crate) mod default {
         feature = "trinket-pro",
         feature = "nano168",
     ))]
-    pub type DefaultClock = avr_hal_generic::clock::MHz16;
+//    pub type DefaultClock = avr_hal_generic::clock::MHz16;
+    pub type DefaultClock = avr_hal_generic::clock::MHz8;
     #[cfg(feature = "trinket")]
     pub type DefaultClock = avr_hal_generic::clock::MHz8;
 }
